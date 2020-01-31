@@ -24,16 +24,22 @@ h1, h2 {
 }
 
 h1 {
-  margin: 30px 0px 50px;
+  margin: 70px 0px 50px;
+  font-size: 70px;
 }
 
 h2 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-size: 35px;
 }
 
 /*--------------------------------------------
 ----------------BARRE QUI DESCEND------------
 --------------------------------------------*/
+#barre-desc {
+  margin: 10px 0  200px;
+}
+
 #descend {
   margin: 0 auto;
   width: 250px;
@@ -43,7 +49,7 @@ h2 {
   transition-delay: 0.1s;
   transition-duration: 1.5s;
   transition-property: height;
-  border: 2px solid #fff
+  border: 2px solid #fff;
 }
 
 #descend:hover {
@@ -62,3 +68,26 @@ h2 {
 /*--------------------------------------------
 ---------------CARRE QUI TOURNE---------------
 --------------------------------------------*/
+#carre-tourne {
+  margin: 10px 0 200px;
+}
+
+#carre {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  margin: 150px auto 0;
+  background-color: #0d47a1;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {background-color: #0d47a1;}
+  10% {background-color: #0d47a1; transform: rotate(0deg);}
+  50% {background-color: #42a5f5; transform: rotate(720deg);}
+  60% {background-color: #42a5f5; transform: rotate(720deg);}
+  100% {background-color: #0d47a1; transform: rotate(0deg);}
+}
