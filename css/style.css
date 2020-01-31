@@ -24,22 +24,22 @@ h1, h2 {
 }
 
 h1 {
-  margin: 70px 0px 50px;
-  font-size: 70px;
+  margin: 100px 0px 100px;
+  font-size: 100px;
 }
 
 h2 {
   margin-bottom: 50px;
-  font-size: 35px;
+  font-size: 50px;
+}
+
+.content {
+  margin: 10px 0  200px;
 }
 
 /*--------------------------------------------
 ----------------BARRE QUI DESCEND------------
 --------------------------------------------*/
-#barre-desc {
-  margin: 10px 0  200px;
-}
-
 #descend {
   margin: 0 auto;
   width: 250px;
@@ -68,10 +68,6 @@ h2 {
 /*--------------------------------------------
 ---------------CARRE QUI TOURNE---------------
 --------------------------------------------*/
-#carre-tourne {
-  margin: 10px 0 200px;
-}
-
 #carre {
   width: 200px;
   height: 200px;
@@ -91,3 +87,51 @@ h2 {
   60% {background-color: #42a5f5; transform: rotate(720deg);}
   100% {background-color: #0d47a1; transform: rotate(0deg);}
 }
+
+/*--------------------------------------------
+--------------BALLE QUI REBONDIT-------------
+--------------------------------------------*/
+
+#tube {
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+  width: 80px;
+  border-radius: 0px 0px 30px 30px;
+  background-color: #0d47a1;
+  border: 2px solid #fff;
+}
+
+#balle {
+  position: relative;
+  top: 10px;
+  left: 2.5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  background-color: #42a5f5;
+  animation: rebond;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes rebond {
+  0% {top: 10px;}
+  5%{top: 425px;}
+  10%{top: 100px;}
+  15%{top: 425px;}
+  20%{top: 200px;}
+  25%{top: 425px;}
+  30%{top: 300px;}
+  40%{top: 425px;}
+  50%{top:370px;}
+  60%{top: 425px;}
+  85%{top: 400px;}
+  97%{top: 425px;}
+  100%{top: 425px;}
+}
+
+/*--------------------------------------------
+-----------------LE LOADER-------------------
+--------------------------------------------*/
