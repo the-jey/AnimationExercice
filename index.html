@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./img/3d.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <title>Exercices d'Animation</title>
 </head>
 <body>
   <div id="container">
-    <h1>Les animations</h1>>
+    <h1 id="top">Les animations</h1>>
     <!--Animation 1 : Barre qui descend -->
     <div class="content">
       <h2>Animation 1 : La barre qui descend</h2>
@@ -44,7 +45,7 @@
     <!--Animation 5 : Carré à la chaîne -->
     <div class="content">
       <h2>Animation 5 : Carré à la chaîne</h2>
-      <div class="fond">
+      <div id="fondEx5">
         <div id="carre1" class="square"></div>
         <div id="carre2" class="square"></div>
         <div id="carre3" class="square"></div>
@@ -54,6 +55,26 @@
       </div>
     </div>
     <!--Animation 6 : Carroussel 3D ------>
+    <div class="content">
+      <h2>Animation 6 : Carroussel 3D</h2>
+      <div id="carrousselBackground">
+        <div id="carroussel">
+          <div id="carPart1"></div>
+          <div id="carPart2"></div>
+          <div id="carPart3"></div>
+          <div id="carPart4"></div>
+          <div id="carPart5"></div>
+          <div id="carPart6"></div>
+          <div id="carPart7"></div>
+          <div id="carPart8"></div>
+          <div id="carPart9"></div>
+          <div id="carPart10"></div>
+        </div>
+      </div>
+      <div id="arrow-top">
+        <a href="#top"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path></svg></a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
