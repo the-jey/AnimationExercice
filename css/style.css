@@ -135,6 +135,10 @@ h2 {
 /*--------------------------------------------
 -----------------LE LOADER-------------------
 --------------------------------------------*/
+#marginEx4 {
+  margin: 10px auto  -200px;
+}
+
 .loader {
   position: relative;
   margin: 10px auto;
@@ -175,4 +179,67 @@ animation-delay: 0s;
 
 /*--------------------------------------------
 ----------------CARRE A LA CHAINE-------------
+--------------------------------------------*/
+.fond {
+  position: relative;
+  margin: 80px auto 0px;
+  width: 800px;
+  height: 400px;
+  background-color: #0d47a1;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.square {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #42a5f5;
+  animation-name: queue;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#carre1 {
+  animation-delay: 1s;
+}
+
+#carre2 {
+  animation-delay: 1.2s;
+}
+
+#carre3 {
+  animation-delay: 1.4s;
+}
+
+#carre4 {
+  animation-delay: 1.6s;
+}
+
+#carre5 {
+  animation-delay: 1.8s;
+}
+
+#carre6 {
+  animation-delay: 2s;
+}
+
+@keyframes queue {
+  0%{top: 5px; left: 5px; background-color: #fff;}
+  20%{top: 5px; left: 770px; background-color: #42a5f5; transform: rotate(720deg);}
+  25%{top: 5px; left: 770px; background-color: #42a5f5; transform: rotate(720deg);}
+  45%{top: 370px; left: 770px; background-color: #0d47a1; transform: rotate(1440deg);}
+  50%{top: 370px; left: 770px; background-color: #0d47a1; transform: rotate(1440deg);}
+  70%{top: 370px; left: 5px; background-color: #42a5f5; transform: rotate(2160deg);}
+  75%{top: 370px; left: 5px; background-color: #42a5f5; transform: rotate(2160deg);}
+  95%{top: 5px; left: 5px; background-color: #fff; transform: rotate(2880deg);}
+  100%{top: 5px; left: 5px; background-color: #fff; transform: rotate(2880deg);}
+}
+
+/*--------------------------------------------
+----------------CARROUSSEL 3D ---------------
 --------------------------------------------*/
